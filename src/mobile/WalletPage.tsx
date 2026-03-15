@@ -48,7 +48,7 @@ export default function WalletPage() {
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => navigate("/mobile")}
+          onClick={() => navigate("/")}
           className="text-gray-600 -ml-2"
         >
           <ArrowLeft className="h-5 w-5 mr-1" />
@@ -76,7 +76,7 @@ export default function WalletPage() {
                   </Button>
                   <Button
                     variant="outline"
-                    className="flex-1 border-gray-600 text-white hover:bg-gray-800"
+                    className="flex-1 border-gray-600 bg-transparent text-white hover:bg-gray-800"
                     onClick={() => setActiveTab("withdraw")}
                   >
                     <ArrowUpRight className="h-4 w-4 mr-2" />
@@ -109,7 +109,7 @@ export default function WalletPage() {
                 <span className="text-sm font-medium text-gray-700">Withdraw</span>
               </button>
               <button
-                onClick={() => navigate("/mobile/wallet/convert")}
+                onClick={() => navigate("/wallet")}
                 className="flex flex-col items-center gap-2 p-4 bg-gray-50 rounded-xl"
               >
                 <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">

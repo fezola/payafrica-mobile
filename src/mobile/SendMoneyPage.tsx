@@ -110,7 +110,7 @@ export default function SendMoneyPage() {
           </div>
           <Button
             className="w-full bg-orange-500 hover:bg-orange-600 text-white"
-            onClick={() => navigate("/mobile")}
+            onClick={() => navigate("/")}
           >
             Done
           </Button>
@@ -205,7 +205,7 @@ export default function SendMoneyPage() {
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => navigate("/mobile")}
+          onClick={() => navigate("/")}
           className="text-gray-600 -ml-2"
         >
           <ArrowLeft className="h-5 w-5 mr-1" />

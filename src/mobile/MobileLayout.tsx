@@ -16,11 +16,11 @@ import { Card, CardContent } from "../components/ui/card";
 
 // Bottom navigation tabs
 const mobileNavItems = [
-  { path: "/mobile", label: "Home", icon: Home },
-  { path: "/mobile/send", label: "Send", icon: Send },
-  { path: "/mobile/wallet", label: "Wallet", icon: Wallet },
-  { path: "/mobile/activity", label: "Activity", icon: Activity },
-  { path: "/mobile/profile", label: "Profile", icon: User },
+  { path: "/", label: "Home", icon: Home },
+  { path: "/send", label: "Send", icon: Send },
+  { path: "/wallet", label: "Wallet", icon: Wallet },
+  { path: "/activity", label: "Activity", icon: Activity },
+  { path: "/profile", label: "Profile", icon: User },
 ];
 
 // Mock saved contacts
@@ -127,7 +127,7 @@ function HomeScreen() {
           {savedContacts.map((contact) => (
             <button
               key={contact.id}
-              onClick={() => navigate(`/mobile/send?to=${contact.payId}`)}
+              onClick={() => navigate(`/send?to=${contact.payId}`)}
               className="flex flex-col items-center min-w-[80px]"
             >
               <div className="w-14 h-14 rounded-full bg-gray-200 flex items-center justify-center mb-2">
@@ -148,7 +148,7 @@ function HomeScreen() {
             variant="ghost" 
             size="sm" 
             className="text-orange-500"
-            onClick={() => navigate("/mobile/activity")}
+            onClick={() => navigate("/activity")}
           >
             See all
           </Button>

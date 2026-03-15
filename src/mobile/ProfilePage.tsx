@@ -52,7 +52,7 @@ export default function ProfilePage() {
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => navigate("/mobile")}
+          onClick={() => navigate("/")}
           className="text-gray-600 -ml-2"
         >
           <ArrowLeft className="h-5 w-5 mr-1" />
@@ -99,7 +99,7 @@ export default function ProfilePage() {
                 <Button 
                   variant="ghost" 
                   size="sm" 
-                  onClick={() => navigate("/mobile/receive")}
+                  onClick={() => navigate("/receive")}
                   className="text-orange-500"
                 >
                   <QrCode className="h-4 w-4" />

@@ -48,7 +48,7 @@ const MobileAuthPage: React.FC = () => {
       toast.error(error.message);
     } else {
       toast.success("Welcome back!");
-      navigate("/mobile");
+      navigate("/");
     }
     setLoading(false);
   };
@@ -123,7 +123,7 @@ const MobileAuthPage: React.FC = () => {
 
           <Button 
             className="w-full bg-orange-500 hover:bg-orange-600 text-white h-12 rounded-xl"
-            onClick={() => navigate("/mobile")}
+            onClick={() => navigate("/")}
           >
             Continue to App
             <ArrowRight className="ml-2 h-5 w-5" />

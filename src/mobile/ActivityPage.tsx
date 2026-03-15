@@ -110,7 +110,7 @@ export default function ActivityPage() {
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => navigate("/mobile")}
+          onClick={() => navigate("/")}
           className="text-gray-600 -ml-2"
         >
           <ArrowLeft className="h-5 w-5 mr-1" />
