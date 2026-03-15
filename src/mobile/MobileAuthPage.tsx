@@ -287,9 +287,11 @@ const MobileAuthPage: React.FC = () => {
     <div className="min-h-screen bg-white flex flex-col">
       <div className="px-6 pt-12 pb-8">
         <div className="text-center mb-8">
-          <div className="w-20 h-20 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-            <span className="text-white text-3xl font-bold">P</span>
-          </div>
+          <img 
+            src="/payafrica.png" 
+            alt="PayAfrica Logo" 
+            className="h-16 mx-auto mb-4 object-contain"
+          />
           <h1 className="text-2xl font-bold text-black">PayAfrica</h1>
           <p className="text-gray-500 text-sm mt-1">Send money across Africa</p>
         </div>
